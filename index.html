@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ✅ Sticky Navbar -->
+    <nav class="navbar">
+        <div class="logo">🌍 Travel Agency</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Hero -->
+    <header id="hdr">
+        <div class="content-wrap">
+            <h1 data-aos="fade-down">Explore The World With Us</h1>
+            <p data-aos="fade-up">Unforgettable experiences, amazing destinations — all in one place!</p>
+        </div>
+    </header>
+
+    <!-- ✅ Carousel -->
+    <section class="carousel">
+        <div class="slides">
+            <div class="slide active">
+                <div class="bg-blur" style="background-image:url('paris.png');"></div>
+                <img src="paris.png" alt="Paris">
+                <div class="description">Beautiful view of Paris</div>
+            </div>
+            <div class="slide">
+                <div class="bg-blur" style="background-image:url('india.png');"></div>
+                <img src="india.png" alt="India">
+                <div class="description">Cultural richness of India</div>
+            </div>
+            <div class="slide">
+                <div class="bg-blur" style="background-image:url('malaysia.png');"></div>
+                <img src="malaysia.png" alt="Malaysia">
+                <div class="description">Modern skyline of Malaysia</div>
+            </div>
+        </div>
+
+        <!-- Carousel dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Packages -->
+    <section class="prices" id="packages" data-aos="fade-up">
+        <div class="content-wrap">
+            <h2>Our Packages</h2>
+            <div class="cards">
+                <div class="package-card">
+                    <img src="beach.jpg" alt="Beach Getaway">
+                    <h3>Beach Getaway</h3>
+                    <p>Enjoy a relaxing week at the beach with all-inclusive amenities.</p>
+                    <span class="price">$999</span>
+                </div>
+                <div class="package-card">
+                    <img src="mountain.jpg" alt="Mountain Adventure">
+                    <h3>Mountain Adventure</h3>
+                    <p>Thrilling hikes, stunning views & cozy camps.</p>
+                    <span class="price">$799</span>
+                </div>
+                <div class="package-card">
+                    <img src="city.jpg" alt="City Escape">
+                    <h3>City Escape</h3>
+                    <p>Urban adventures and nightlife exploration.</p>
+                    <span class="price">$1199</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Testimonials -->
+    <section class="testimonials" id="testimonials" data-aos="fade-left">
+        <div class="content-wrap">
+            <h2>What Our Travelers Say ✈️</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <p>"Best agency ever! My Paris trip felt like a dream ✨"</p>
+                    <h4>- Sarah J.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"India was magical, and the planning was perfect!"</p>
+                    <h4>- Michael T.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Malaysia skyline views were breathtaking. Hassle-free travel."</p>
+                    <h4>- Priya R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer>
+        <div class="content-wrap">
+            <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+            <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

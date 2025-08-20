@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Trip - Travel Agency</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 Travel Agency</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Booking Section -->
+  <section class="booking">
+    <div class="content-wrap">
+      <h2>Book Your Dream Trip ✨</h2>
+      <form class="booking-form">
+        <label for="name">Traveler Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="destination">Destination</label>
+        <select id="destination" required>
+          <option value="">-- Select a Destination --</option>
+          <option value="Paris" data-price="999">Paris - $999</option>
+          <option value="India" data-price="799">India - $799</option>
+          <option value="Malaysia" data-price="1199">Malaysia - $1199</option>
+        </select>
+
+        <label for="date">Travel Date</label>
+        <input type="date" id="date" required>
+
+        <label for="guests">Number of Travelers</label>
+        <input type="number" id="guests" value="1" min="1" required>
+
+        <div class="total-box">
+          Total Price: <span id="total">$0</span>
+        </div>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <div class="content-wrap">
+      <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Price Calculator
+    const destination = document.querySelector('#destination');
+    const guests = document.querySelector('#guests');
+    const total = document.querySelector('#total');
+
+    function calculateTotal() {
+      const selected = destination.options[destination.selectedIndex];
+      const price = selected.getAttribute('data-price');
+      const count = guests.value;
+      if(price) {
+        total.textContent = `$${price * count}`;
+      } else {
+        total.textContent = '$0';
+      }
+    }
+
+    destination.addEventListener('change', calculateTotal);
+    guests.addEventListener('input', calculateTotal);
+  </script>
+
+</body>
+</html>
