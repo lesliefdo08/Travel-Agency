@@ -19,8 +19,7 @@ body {
     padding: 20px;
 }
 
-/* ========== NAVBAR ========== */
-/* NAVBAR base */
+/* Navbar */
 .navbar {
     position: sticky;
     top: 0;
@@ -38,7 +37,6 @@ body {
     font-weight: bold;
 }
 
-/* Nav links desktop */
 .nav-links {
     list-style: none;
     display: flex;
@@ -53,14 +51,9 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* Hamburger button (default hidden on desktop) */
+/* Hamburger Button */
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -70,7 +63,7 @@ body {
     cursor: pointer;
 }
 
-/* ✅ Responsive for phones/tablets */
+/* ✅ Mobile Styles */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -80,13 +73,11 @@ body {
         position: fixed;
         top: 0;
         right: -250px;
-        /* initially hidden offscreen */
+        /* hidden offscreen by default */
         height: 100vh;
         width: 250px;
         background: linear-gradient(135deg, #00b09b, #96c93d);
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
         padding: 70px 20px;
         gap: 20px;
         transition: right 0.3s ease-in-out;
@@ -95,13 +86,11 @@ body {
 
     .nav-links.active {
         right: 0;
-        /* slide in menu */
     }
 
-    .nav-links a {
-        font-size: 1.2rem;
-    }
+    /* slide in when active */
 }
+
 
 
 /* ========== HEADER / HERO ========== */
