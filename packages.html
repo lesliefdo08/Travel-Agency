@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Packages - Travel Agency</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="logo">🌍 Travel Agency</div>
-    <ul class="nav-links">
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="destinations.html">Destinations</a></li>
       <li><a href="packages.html">Packages</a></li>
+      <li><a href="booking.html">Booking</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -23,13 +27,13 @@
       <h2>Our Travel Packages</h2>
       <div class="cards">
         <div class="package-card">
-          <img src="beach.jpg" alt="Beach">
+          <img src="beach.jpg" alt="Beach" />
           <h3>Luxury Beach Package</h3>
           <p>5-star stay, all meals, and activities included.</p>
           <span class="price">$1499</span>
         </div>
         <div class="package-card">
-          <img src="mountain.jpg" alt="Mountains">
+          <img src="mountain.jpg" alt="Mountains" />
           <h3>Adventure Trekking</h3>
           <p>Guided tours, safe camping, and local guides.</p>
           <span class="price">$899</span>
@@ -38,6 +42,8 @@
     </div>
   </section>
 
+  <script src="script.js"></script>
+
   <footer>
     <div class="content-wrap">
       <p>&copy; 2025 Travel Agency. All rights reserved.</p>
@@ -45,4 +51,5 @@
   </footer>
 
 </body>
+
 </html>
