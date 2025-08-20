@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - Travel Agency</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <nav class="navbar">
     <div class="logo">🌍 Travel Agency</div>
-    <ul class="nav-links">
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="destinations.html">Destinations</a></li>
       <li><a href="packages.html">Packages</a></li>
+      <li><a href="booking.html">Booking</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -23,16 +27,21 @@
       <h2>Contact Us 📞</h2>
       <form>
         <label>Name:</label>
-        <input type="text" required>
+        <input type="text" required />
         <label>Email:</label>
-        <input type="email" required>
+        <input type="email" required />
         <label>Message:</label>
         <textarea required></textarea>
         <button type="submit">Send</button>
       </form>
-      <!-- ✅ Google Map Embed -->
+      <!-- Google Map Embed placeholder -->
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=..."
+          width="100%"
+          height="300"
+          style="border:0;"
+        ></iframe>
       </div>
     </div>
   </section>
@@ -43,5 +52,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
+
 </html>
